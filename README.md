@@ -27,8 +27,9 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/lockreserve.git  
+git clone https://github.com/Coderviveknigam/LockReserve.git
 cd lockreserve  
+
 Open in Browser:
 Simply open the index.html file in your favorite browser, and you’re good to go!
 
