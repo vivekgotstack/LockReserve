@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>LockReserve - Your Personal Password Manager</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LockReserve - Your Personal Password Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 <body>
-    <nav>
-        <div class="logo"><i class="fa-solid fa-user-lock"></i>LockReserve</div>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-    <div class="container">
-        <h1>Password Manager</h1>
-        <p>I'm thrilled to have you here. Your digital life contains a myriad of passwords, and I know how
-            challenging it can be to manage them all. That's why I am here to make it easy for you.</p>
-        <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
-        <table>
-            <tr>
-                <th>Website</th>
-                <th>Username</th>
-                <th>Password</th>
-                <th>Delete</th>
-            </tr>
+  <nav>
+    <div class="logo"><i class="fa-solid fa-user-lock"></i>LockReserve</div>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
 
-        </table>
+  <main class="container">
+    <h1>Password Manager</h1>
+    <p>I'm thrilled to have you here. Your digital life contains a myriad of passwords, and I know how
+      challenging it can be to manage them all. That's why I am here to make it easy for you.</p>
 
-        <h2>Add a Password</h2>
-        <form action="/submit" method="post">
-            <label for="website">Website:</label>
-            <input type="text" id="website" name="website" required>
-            <br><br>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <button class="btn" type="submit">Submit</button>
-        </form>
+    <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
+    <table>
+      <tr>
+        <th>Website</th>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Delete</th>
+      </tr>
+    </table>
+
+    <h2>Add a Password</h2>
+    <form id="addForm" method="post">
+      <label for="website">Website:</label>
+      <input type="text" id="website" name="website" required>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container2">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/vivek.nigam.50309"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com/vivekgotstack"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/randomvivek"><i class="fab fa-instagram"></i></a>
+        <a href="www.linkedin.com/in/randomvivek"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="logo" id="bottom-logo"><i class="fa-solid fa-user-lock"></i>Lockreserve</div>
+      <p class="footer-text">&copy; 2024 LockReserve Company. All rights reserved.</p>
     </div>
-    <footer class="footer">
-        <div class="container2">
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <div class="footer-nav">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="logo" id="bottom-logo"><i class="fa-solid fa-user-lock"></i>Lockreserve</div>
-            <p class="footer-text">&copy; 2024 LockReserve Company. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
+  </footer>
 
+  <script src="script.js"></script>
+</body>
 </html>
